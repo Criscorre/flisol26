@@ -1,0 +1,20 @@
+[
+  {
+    "nombre": "Richard Stallman",
+    "ciudad": "Boston, USA",
+    "mensaje": "Free software is a matter of liberty, not price.",
+    "nivel": "dev"
+  },
+  {
+    "nombre": "Linus Torvalds",
+    "ciudad": "Helsinki, Finlandia",
+    "mensaje": "Talk is cheap. Show me the code.",
+    "nivel": "dev"
+  },
+  {
+    "nombre": "Ana García",
+    "ciudad": "Buenos Aires, Argentina",
+    "mensaje": "¡Mi primer PR! No sabía que era tan fácil 🐧",
+    "nivel": "curiosa"
+  }
+]
