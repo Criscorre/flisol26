@@ -16,5 +16,11 @@
     "ciudad": "Buenos Aires, Argentina",
     "mensaje": "¡Mi primer PR! No sabía que era tan fácil 🐧",
     "nivel": "curiosa"
+  },
+  {
+    "nombre": "Matias Rios",
+    "ciudad": "Buenos Aires, Argentina",
+    "mensaje": "Soy un contributors para este sitio🐧",
+    "nivel": "dev"
   }
 ]
