@@ -1,5 +1,5 @@
 /**
- * app.js — FLISoL UNPAZ 2025
+ * app.js — FLISoL UNPAZ 2026
  * Licencia: GPL-3.0
  *
  * Este archivo hace una sola cosa:

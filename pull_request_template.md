@@ -11,7 +11,7 @@
 
 ## Checklist
 
-- [ ] Mi entrada en `contributors.json` tiene los campos: `nombre`, `ciudad`, `mensaje`, `nivel`
+- [ ] Mi entrada en `contributors.json` tiene los campos: `nombre`, `ciudad`, `mensaje`, `rol`,`libertad_favorita`
 - [ ] El archivo JSON sigue siendo válido (sin comas de más, sin comillas faltantes)
 - [ ] El sitio se ve bien en el navegador
 

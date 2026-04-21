@@ -1,9 +1,9 @@
-# 🐧 FLISoL UNPAZ 2025 — Tu primera huella en Internet
+# 🐧 FLISoL UNPAZ 2026 — Tu primera huella en Internet
 
 Sitio web de la charla **"Tu primera huella en Internet: Cómo colaborar en Software Libre"**
 por **Matías Ríos** · Sábado 25/4 · 15 hs · Aula 210 · UNPAZ
 
-**[→ Ver el sitio](https://TUORG.codeberg.page/flisol-demo)**
+**[→ Ver el sitio](https://flisol26.codeberg.page/flisolweb)**
 
 ---
 
@@ -39,7 +39,7 @@ flisol-demo/
 
 Abrí el sitio en tu dispositivo y reportá si algo no funciona.
 
-1. Abrí [TUORG.codeberg.page/flisol-demo](https://TUORG.codeberg.page/flisol-demo)
+1. Abrí [flisol26.codeberg.page/flisolweb](https://flisol26.codeberg.page/flisolweb)
 2. Si algo se ve mal o no funciona, abrí un **Issue** en Codeberg:
    - ¿Qué viste? ¿Qué esperabas ver?
    - ¿Desde qué dispositivo y navegador?
@@ -91,8 +91,8 @@ Cloná el repo, modificá el código y abrí un Pull Request.
 # 1. Fork del repo desde Codeberg
 
 # 2. Clonar tu fork
-git clone https://codeberg.org/TUUSUARIO/flisol-demo
-cd flisol-demo
+git clone https://codeberg.org/flisol26/flisolweb
+cd flisolweb
 
 # 3. Crear una rama para tu cambio
 git checkout -b mi-mejora
@@ -132,7 +132,7 @@ El sitio se publica desde el branch `pages`.
 
 Para activarlo en tu fork:
 1. Asegurate de que el branch `pages` exista con los archivos del sitio
-2. El sitio queda disponible en `tuusuario.codeberg.page/flisol-demo`
+2. El sitio queda disponible en `flisol26.codeberg.page/flisolweb`
 
 Para actualizar, cualquier push al branch `pages` redespliega el sitio automáticamente.
 
