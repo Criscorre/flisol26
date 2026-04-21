@@ -1,26 +1,34 @@
-[
-  {
-    "nombre": "Richard Stallman",
-    "ciudad": "Boston, USA",
-    "mensaje": "Free software is a matter of liberty, not price.",
-    "nivel": "dev"
-  },
-  {
-    "nombre": "Linus Torvalds",
-    "ciudad": "Helsinki, Finlandia",
-    "mensaje": "Talk is cheap. Show me the code.",
-    "nivel": "dev"
-  },
-  {
-    "nombre": "Ana García",
-    "ciudad": "Buenos Aires, Argentina",
-    "mensaje": "¡Mi primer PR! No sabía que era tan fácil 🐧",
-    "nivel": "curiosa"
-  },
-  {
-    "nombre": "Matias Rios",
-    "ciudad": "Buenos Aires, Argentina",
-    "mensaje": "Soy un contributors para este sitio🐧",
-    "nivel": "dev"
-  }
-]
+{
+  "evento": "FLISoL UNPAZ 2025",
+  "descripcion": "Agregá tu entrada acá y abrí un Pull Request en Codeberg.",
+  "contributors": [
+    {
+      "nombre": "Ada Lovelace",
+      "ciudad": "Londres, UK",
+      "mensaje": "El código es el lenguaje de la libertad.",
+      "rol": "developer",
+      "libertad_favorita": "1"
+    },
+    {
+      "nombre": "Richard Stallman",
+      "ciudad": "Boston, USA",
+      "mensaje": "Free as in freedom, not free as in beer.",
+      "rol": "developer",
+      "libertad_favorita": "3"
+    },
+    {
+      "nombre": "Linus Torvalds",
+      "ciudad": "Helsinki, Finlandia",
+      "mensaje": "Just for fun.",
+      "rol": "developer",
+      "libertad_favorita": "2"
+    },
+    {
+      "nombre": "Matias Rios",
+      "ciudad": "Buenos Aires, Argentina",
+      "mensaje": "Soy un contributors para este sitio🐧",
+      "rol": "developer",
+      "libertad_favorita": "1"
+    }
+  ]
+}
