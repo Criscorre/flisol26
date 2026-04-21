@@ -1,122 +1,156 @@
-# 🐧 FLISoL — Mural de Participantes
+# 🐧 FLISoL UNPAZ 2025 — Tu primera huella en Internet
 
-Sitio web de demostración para la charla
-**"Software Libre y repositorios"** — FLISoL
+Sitio web de la charla **"Tu primera huella en Internet: Cómo colaborar en Software Libre"**
+por **Matías Ríos** · Sábado 25/4 · 15 hs · Aula 210 · UNPAZ
 
-**Demo en vivo →** `https://TUUSUARIO.github.io/flisol-web`
-
----
-
-## ¿Qué es esto?
-
-Un mural colaborativo donde cada participante de la charla puede
-aparecer con su nombre, ciudad y mensaje. Cada contribución es
-un Pull Request real a un proyecto de Software Libre.
-
----
-
-## Cómo contribuir según tu nivel
-
-### 🔵 Nivel 1 — Tester (sin instalar nada)
-
-1. Abrí el sitio en tu navegador o celular
-2. ¿Algo se ve raro? ¿Algún error?
-3. Abrí un **Issue** en este repositorio
-4. Describí el problema y en qué dispositivo lo viste
-
-Eso ya es una contribución valiosa.
-
----
-
-### 🟡 Nivel 2 — Contribuidor (solo necesitás una cuenta)
-
-1. Creá una cuenta en [GitHub](https://github.com) o [Codeberg](https://codeberg.org)
-2. Abrí el archivo [`contributors.json`](./contributors.json)
-3. Hacé clic en el ícono del lápiz ✏️ (Edit this file)
-4. Agregá tu entrada **antes del último `]`**, siguiendo este formato:
-
-```json
-  {
-    "nombre": "Tu Nombre",
-    "ciudad": "Tu Ciudad, País",
-    "mensaje": "Lo que quieras decir 🐧",
-    "nivel": "curioso"
-  }
-```
-
-Valores válidos para `nivel`: `curioso`, `curiosa`, `sugeridor`, `sugeridora`, `dev`
-
-5. Al final de la página, hacé clic en **"Propose changes"**
-6. Luego en **"Create pull request"**
-
-¡Listo! Tu nombre aparecerá en el mural cuando el PR sea aprobado.
-
----
-
-### 🟢 Nivel 3 — Desarrollador (con Git)
-
-```bash
-# 1. Fork del repo desde la web
-
-# 2. Clonar tu fork
-git clone https://github.com/TUUSUARIO/flisol-web
-cd flisol-web
-
-# 3. Crear una rama
-git checkout -b mi-mejora
-
-# 4. Modificar index.html, contributors.json, o lo que quieras
-
-# 5. Commit y push
-git add .
-git commit -m "Descripción de tu cambio"
-git push origin mi-mejora
-
-# 6. Abrir Pull Request desde GitHub
-```
-
-Ideas para mejorar el sitio:
-- Agregar un modo claro (light theme)
-- Mejorar el diseño en móvil
-- Agregar filtro por ciudad o nivel
-- Agregar animaciones al cargar las tarjetas
-- Soporte para avatares en las tarjetas
+**[→ Ver el sitio](https://TUORG.codeberg.page/flisol-demo)**
 
 ---
 
 ## Estructura del proyecto
 
+El código está separado en archivos para que sea fácil de leer y modificar.
+Cada archivo tiene una responsabilidad clara:
+
 ```
-flisol-web/
-├── index.html           ← el sitio completo (HTML + CSS + JS)
-├── contributors.json    ← los datos del mural — acá contribuís
-├── README.md            ← esta guía
-├── LICENCIA             ← GPL-3.0
-└── .github/
-    └── pull_request_template.md
+flisol-demo/
+│
+├── index.html          ← estructura de la página (qué hay)
+├── style.css           ← diseño y colores (cómo se ve)
+├── app.js              ← lógica del mural (cómo funciona)
+│
+├── contributors.json   ← datos de los participantes (quiénes están)
+│
+├── LICENCIA            ← GPL-3.0
+└── README.md           ← este archivo
 ```
+
+**¿Querés cambiar los colores?** → Editá `style.css`, buscá la sección `:root`
+
+**¿Querés cambiar la lógica del mural?** → Editá `app.js`
+
+**¿Querés agregar tu nombre?** → Editá `contributors.json`
 
 ---
 
-## Desplegar en GitHub Pages
+## Cómo contribuir según tu nivel
 
-1. Ir a **Settings → Pages**
-2. Source: **Deploy from a branch**
-3. Branch: `main` / `(root)`
-4. Guardar
+### 🧪 Nivel 1 — Tester
 
-El sitio queda en `https://TUUSUARIO.github.io/flisol-web`
-Cada merge a `main` actualiza el sitio automáticamente.
+Abrí el sitio en tu dispositivo y reportá si algo no funciona.
+
+1. Abrí [TUORG.codeberg.page/flisol-demo](https://TUORG.codeberg.page/flisol-demo)
+2. Si algo se ve mal o no funciona, abrí un **Issue** en Codeberg:
+   - ¿Qué viste? ¿Qué esperabas ver?
+   - ¿Desde qué dispositivo y navegador?
+
+**Libertad que ejercés: Libertad 0** — usás y auditás el software.
+
+---
+
+### ✏️ Nivel 2 — Contribuidor (desde el navegador, sin instalar nada)
+
+> **¿Por qué Codeberg pide un fork?**
+> No sos colaborador del repo, así que no podés editar directamente —
+> eso protege el código del proyecto. Un fork es tu copia personal donde
+> podés hacer cambios y luego proponerlos. Eso es la **Libertad 3** en acción.
+
+1. Abrí [`contributors.json`](./contributors.json) en Codeberg
+2. Clic en el lápiz ✏️ → clic en **"Fork this repository and edit"**
+3. Agregá tu entrada al final del array `contributors`, antes del `]`:
+
+```json
+{
+  "nombre": "Tu Nombre",
+  "ciudad": "Tu Ciudad, País",
+  "mensaje": "Tu mensaje sobre el Software Libre",
+  "rol": "sugiere",
+  "libertad_favorita": "1"
+}
+```
+
+> ⚠️ Si no es el último elemento, agregá una coma `,` al final del `}` anterior.
+
+Valores válidos:
+- **`rol`**: `"tester"` · `"sugiere"` · `"developer"`
+- **`libertad_favorita`**: `"0"` · `"1"` · `"2"` · `"3"`
+
+4. Clic en **Propose file change**
+5. Clic en **Create Pull Request**
+6. Cuando sea mergeado, tu tarjeta aparece en el sitio 🎉
+
+**Libertad que ejercés: Libertad 3** — mejorás el software y publicás el cambio.
+
+---
+
+### 💻 Nivel 3 — Desarrollador
+
+Cloná el repo, modificá el código y abrí un Pull Request.
+
+```bash
+# 1. Fork del repo desde Codeberg
+
+# 2. Clonar tu fork
+git clone https://codeberg.org/TUUSUARIO/flisol-demo
+cd flisol-demo
+
+# 3. Crear una rama para tu cambio
+git checkout -b mi-mejora
+
+# 4. Probar localmente
+python3 -m http.server 8000
+# → Abrí http://localhost:8000
+
+# 5. Hacer el cambio
+#    Colores → style.css sección :root
+#    Layout  → style.css sección correspondiente
+#    Lógica  → app.js
+#    Datos   → contributors.json
+
+# 6. Commit y push
+git add .
+git commit -m "Descripción de mi mejora"
+git push origin mi-mejora
+
+# 7. Abrir Pull Request desde Codeberg
+```
+
+Ideas para mejorar el proyecto:
+- Agregar filtro por libertad favorita en el mural
+- Hacer que las tarjetas se ordenen por fecha de merge
+- Mejorar la accesibilidad (ARIA, contraste)
+- Agregar modo oscuro / claro
+- Traducir el sitio a otro idioma
+
+**Libertad que ejercés: las 4 libertades.**
+
+---
+
+## Despliegue en Codeberg Pages
+
+El sitio se publica desde el branch `pages`.
+
+Para activarlo en tu fork:
+1. Asegurate de que el branch `pages` exista con los archivos del sitio
+2. El sitio queda disponible en `tuusuario.codeberg.page/flisol-demo`
+
+Para actualizar, cualquier push al branch `pages` redespliega el sitio automáticamente.
 
 ---
 
 ## Licencia
 
-**GPL-3.0** — Podés usar, estudiar, modificar y redistribuir este código,
-siempre que tus versiones conserven la misma licencia.
+**GPL-3.0** — Podés usar este código, modificarlo y distribuirlo,
+siempre que tu versión también sea libre.
 
-Ver [LICENCIA](./LICENCIA) · [gnu.org/licenses/gpl-3.0](https://www.gnu.org/licenses/gpl-3.0)
+Ver [`LICENCIA`](./LICENCIA) · [gnu.org/licenses/gpl-3.0](https://www.gnu.org/licenses/gpl-3.0)
 
 ---
 
-*Hecho con 🐧 para FLISoL*
+## Recursos para seguir
+
+- [codeberg.org](https://codeberg.org) — plataforma de repositorios 100% libre
+- [gnu.org/philosophy](https://www.gnu.org/philosophy/) — las 4 libertades
+- [choosealicense.com](https://choosealicense.com) — elegir una licencia
+- [firstcontributions.github.io](https://firstcontributions.github.io) — guía para tu primer PR
+- [flisol.unpaz.edu.ar](https://flisol.unpaz.edu.ar) — más info del evento
