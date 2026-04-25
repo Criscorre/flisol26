@@ -29,6 +29,13 @@
       "mensaje": "Soy un contributors para este sitio🐧",
       "rol": "developer",
       "libertad_favorita": "1"
+    },
+     {
+      "nombre": "Debora Roldan",
+      "ciudad": "Buenos Aires, Argentina",
+      "mensaje": "El mejor conocimiento es el que se comparte",
+      "rol": "developer",
+      "libertad_favorita": "3"
     }
   ]
 }
