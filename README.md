@@ -56,8 +56,8 @@ Abrí el sitio en tu dispositivo y reportá si algo no funciona.
 > podés hacer cambios y luego proponerlos. Eso es la **Libertad 3** en acción.
 
 1. Abrí [`contributors.json`](./contributors.json) en Codeberg
-2. Clic en el lápiz ✏️ → clic en **"Fork this repository and edit"**
-3. Agregá tu entrada al final del array `contributors`, antes del `]`:
+2. Clic en **"Bifurcar"**: Con esto te permitirá crear una copia del repositorio original en tu cuenta.
+3. Ahora si podés editar lo que quieras. Agregá tu entrada al final del array `contributors`, antes del `]`:
 
 ```json
 {
@@ -75,9 +75,11 @@ Valores válidos:
 - **`rol`**: `"tester"` · `"sugiere"` · `"developer"`
 - **`libertad_favorita`**: `"0"` · `"1"` · `"2"` · `"3"`
 
-4. Clic en **Propose file change**
-5. Clic en **Create Pull Request**
-6. Cuando sea mergeado, tu tarjeta aparece en el sitio 🎉
+4. Clic en **Crear commit de los cambios**
+5. En la solapa de Pull Request. Clic en **Nuevo pull request**
+6. Selecciona fusionar en flisol26:main <-- recuperar de: turepositorio. Clic en **Nuevo pull request**
+7. Clic en **Create pull request**
+8. Cuando sea mergeado, tu tarjeta aparece en el sitio 🎉
 
 **Libertad que ejercés: Libertad 3** — mejorás el software y publicás el cambio.
 
